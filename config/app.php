@@ -2,6 +2,25 @@
 
 return [
 
+  // ...
+
+    'providers' => array(
+        // ...
+
+        'Creitive\Breadcrumbs\BreadcrumbsServiceProvider',
+        'Intervention\Image\ImageServiceProvider',
+    ),
+
+    // ...
+
+    'aliases' => array(
+        // ...
+
+        'Breadcrumbs' => 'Creitive\Breadcrumbs\Facades\Breadcrumbs',
+        'Image'     => 'Intervention\Image\Facades\Image',
+
+    ),
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment
@@ -26,7 +45,7 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', false),
+    'debug' => env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------

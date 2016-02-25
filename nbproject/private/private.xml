@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/CoffeeShop/resources/views/backend/photo/preview.blade.php</file>
+            <file>file:/C:/xampp/htdocs/CoffeeShop/resources/views/backend/type/create.blade.php</file>
+            <file>file:/C:/xampp/htdocs/CoffeeShop/resources/views/layout.blade.php</file>
+            <file>file:/C:/xampp/htdocs/CoffeeShop/resources/views/backend/type/update.blade.php</file>
+            <file>file:/C:/xampp/htdocs/CoffeeShop/resources/views/backend/photo/index.blade.php</file>
+            <file>file:/C:/xampp/htdocs/CoffeeShop/resources/views/backend/type/images.blade.php</file>
+            <file>file:/C:/xampp/htdocs/CoffeeShop/app/Http/Controllers/Backend/TypeController.php</file>
+            <file>file:/C:/xampp/htdocs/CoffeeShop/app/Http/Controllers/Backend/PhotoController.php</file>
+            <file>file:/C:/xampp/htdocs/CoffeeShop/app/Http/routes.php</file>
+            <file>file:/C:/xampp/htdocs/CoffeeShop/assets/css/system.css</file>
+            <file>file:/C:/xampp/htdocs/CoffeeShop/resources/views/backend/type/index.blade.php</file>
+            <file>file:/C:/xampp/htdocs/CoffeeShop/app/Type.php</file>
+        </group>
+    </open-files>
 </project-private>
