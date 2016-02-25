@@ -49,10 +49,10 @@ return [
         ],
         'mysql' => [
             'driver' => 'mysql',
-            'host' => 'localhost',
+            'host' => '122.154.239.67',
             'database' => 'coffeeshop',
             'username' => 'root',
-            'password' => '123456',
+            'password' => '01234',
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => '',
