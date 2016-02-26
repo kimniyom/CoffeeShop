@@ -12,7 +12,7 @@
         <link rel="stylesheet" type="text/css" href="<?php echo Url('assets/css/system.css'); ?>">
         
         <!-- Bootstrap -->
-        <link rel="stylesheet" type="text/css" href="<?php echo Url('assets/bootstrap/css/bootstrap-superhero.css'); ?>">
+        <link rel="stylesheet" type="text/css" href="<?php echo Url('assets/bootstrap/css/bootstrap-slate.css'); ?>">
  
         <link rel="stylesheet" type="text/css" href="<?php echo Url('assets/css/card-css/card-css.css'); ?>">
         <link rel="stylesheet" href="<?php echo Url('assets/css/font-awesome/css/font-awesome.css'); ?>">
@@ -27,6 +27,9 @@
         <!-- FancyBox -->
         <link rel="stylesheet" type="text/css" href="<?php echo Url('assets/fancyBox/source/jquery.fancybox.css'); ?>">
         <script src="<?php echo Url('assets/fancyBox/source/jquery.fancybox.js'); ?>"></script>
+        <?php 
+            use App\Type;
+        ?>
     </head>
     <body>
 
@@ -52,10 +55,15 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">จัดการระบบ <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="<?php echo Url('backend/type/index') ?>">ประภทสินค้า</a></li>
+                                <?php 
+                                    $TypeModel = new Type();
+                                ?>
                                 <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">รายการสินค้า</a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">Bakery</a></li>
-                                        <li><a href="#">Coffee</a></li>
+                                        <?php $TypeProduct = $TypeModel->GetType(); ?>
+                                        @foreach($TypeProduct as $rs)
+                                        <li><a href="{{url('backend/product/type/'.$rs->id)}}">{{$rs->type_name}}</a></li>
+                                        @endforeach
                                     </ul>
                                 </li>
                                  <li><a href="<?php echo Url('backend/photo/index') ?>">คลังรูปภาพ</a></li>

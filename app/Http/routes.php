@@ -60,4 +60,16 @@ Route::group(['prefix' => 'backend'], function () {
         Route::post('action', 'Backend\PhotoController@action');
         Route::post('delete', 'Backend\PhotoController@delete');
     });
+    
+    //Group Product
+     Route::group(['prefix' => 'product'], function () {
+        Route::get('index', 'Backend\ProductController@index');
+        Route::get('type/{id}', 'Backend\ProductController@type');
+        Route::get('create/{type_id}', 'Backend\ProductController@create');
+        Route::post('upload', 'Backend\ProductController@upload');
+        Route::post('images', 'Backend\ProductController@images');
+        Route::post('save', 'Backend\ProductController@save');
+        Route::get('update/{id}', 'Backend\ProductController@update');
+        Route::post('saveupdate', 'Backend\ProductController@saveupdate');
+    });
 });

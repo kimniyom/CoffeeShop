@@ -127,7 +127,13 @@ ul.preview>li>a.del-preview{  position: absolute;  right: 0; bottom: 0px;  displ
 }
 
 
+#hr{
+    border:solid 1px #eb8f34;
+}
 
+#h4{
+    color: #31cde8;
+}
 
 
 /***********************
